@@ -10,4 +10,4 @@ DLCP includes four steps:
 
 3. identifies clinical prognosis biomarkers that closely related with cancer survival and tumor progression (identCP.R)
 
-4. screens small molecular ligands for cancer treatment (CIPHEN)
+4. screens small molecular ligands for cancer treatment (CIPHEN \utl https://github.com/wangyc82/CIPHEN)
