@@ -2,7 +2,7 @@
 
 DLCP is a deep learning - based procedure to stratify cancer patients, identify the possible clinical prognosis biomarkers and their small molecular ligands.
 
-DLCP includes four steps:
+DLCP includes three steps:
 
 1. performs icluster by integrating integrated genomic, transcriptomic and epigenetic data and cancer survival (DNN-c.py)
 
