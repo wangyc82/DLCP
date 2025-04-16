@@ -4,10 +4,8 @@ DLCP is a deep learning - based procedure to stratify cancer patients, identify 
 
 DLCP includes four steps:
 
-1. performs icluster by integrating integrated genomic, transcriptomic and epigenetic data and cancer survival (DNN.py)
+1. performs icluster by integrating integrated genomic, transcriptomic and epigenetic data and cancer survival (DNN-c.py)
 
-2. stratifies cancer patients cancer patients into two subtypes with distinct cancer survival and molecular characteristics (identkeyfeatures.R)
-
-3. identifies clinical prognosis biomarkers that closely related with cancer survival and tumor progression (identCP.R)
+2. stratifies cancer patients cancer patients and identifies clinical prognosis biomarkers that closely related with cancer survival and tumor progression (identpatS.R)
 
 4. screens small molecular ligands for cancer treatment (CIPHEN https://github.com/wangyc82/CIPHEN)
