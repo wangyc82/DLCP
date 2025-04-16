@@ -32,7 +32,7 @@ sigmutgene<-colnames(pat_mut)[which(genesMut>=0.5*length(which(clusMember==2)))]
 # to get DEGs
 library(limma)
 design <- model.matrix(~ 0 + factor(clusMember))
-rownames(design)<-rownames(nldata)
+rownames(design)<-rownames(pat_exp)
 fit<-lmFit(pat_exp,design)
 fit2 <- contrasts.fit(fit, contrast.matrix)
 fit3 <- eBayes(fit2)
@@ -40,7 +40,7 @@ Results <- topTable(fit3,number=nrow(fit3))
 DEGs<-Results$ID[which(abs(Results$logFC)>0.8 & Results$adj.P.Val<0.05)]
 
 # to get DMGs
-rownames(design)<-rownames(nldata)
+rownames(design)<-rownames(pat_methy)
 fit<-lmFit(pat_methy,design)# pat_methy is DNA methylation data
 fit2 <- contrasts.fit(fit, contrast.matrix)
 fit3 <- eBayes(fit2)
